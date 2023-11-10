@@ -9,11 +9,11 @@ pipeline {
         CI = 'true'
     }
     stages {
-        stage('Build') {
-            steps {
-                sh 'npm install'
-            }
-        }
+        // stage('Build') {
+        //     steps {
+        //         sh 'npm install'
+        //     }
+        // }
         stage('OWASP Dependency-Check Vulnerabilities') {
             steps {
             dependencyCheck additionalArguments: ''' 
